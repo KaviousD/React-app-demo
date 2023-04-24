@@ -3,12 +3,14 @@ import './App.css';
 import Header from './Header';
 import Footer from './Footer';
 import Main from './Main';
+import imgArray from './data.json'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Main/>
+      <Main imgdata={imgArray} />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
