@@ -28,7 +28,7 @@ function App() {
         >
           Learn React
         </a>
-      </footer> {/* Corrected from header to footer */}
+      </footer>
       <Footer />
     </div>
   );
