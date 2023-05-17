@@ -22,12 +22,14 @@ const ImageComp = (props) => {
                     Close
                 </Button>
                 <Button variant="primary" onClick={handleClose}>
-                    Save Changes
+                    Review next
                 </Button>
             </Modal.Footer>
         </Modal>
     );
 };
+
+
 
 
 

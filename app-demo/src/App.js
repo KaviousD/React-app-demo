@@ -6,7 +6,9 @@ import Footer from './Footer';
 import Main from './Main';
 import imgArray from './data.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ImageComp from './componets/SelectedBeast';
+import ImageComp from './components/SelectedBeast';
+
+
 
 function App() {
   const [showModal, setShowModal] = useState(false)
