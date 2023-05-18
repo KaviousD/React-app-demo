@@ -6,7 +6,9 @@ class HornedBeast extends React.Component {
     this.state = {
       clickImage: 0
     };
+    // 
     this.setShow = props.setShow
+    this.setShowbeast = props.setShowbeast
   }
   clickImage = () => {
     this.setState({
@@ -15,7 +17,12 @@ class HornedBeast extends React.Component {
 
     //open the modal
     this.setShow(true)
-    
+    this.setShowbeast({
+      "image_url": this.props.imageUrl,
+      "title": this.props.title,
+      "description": this.props.description,
+    })
+
   }
 
   render() {
@@ -24,7 +31,7 @@ class HornedBeast extends React.Component {
         <Card style={{ width: '18rem' }}>
           <body>{this.props.title}</body>
           {/* <img */}
-            {/* src={this.props.imageUrl}
+          {/* src={this.props.imageUrl}
             alt={this.props.keyword}
             title={this.props.title}
           /> */}
