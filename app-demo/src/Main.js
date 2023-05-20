@@ -14,6 +14,7 @@ class Main extends React.Component {
         };
     }
 
+    // Pulling number of horns and other props.
     componentDidMount() {
         // Fetch the JSON data
         fetch('data.json')
