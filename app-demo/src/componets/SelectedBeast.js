@@ -1,15 +1,15 @@
-// import React, { useState } from "react";
+import React, { useState } from "react";
 import Modal from 'react-bootstrap/Modal';
 import { Button } from "react-bootstrap";
 const ImageComp = (props) => {
-    // const [isClicked, setIsClicked] = useState(false);
+    const [isClicked, setIsClicked] = useState(false);
 
     const handleClose = () => props.setShow(false);
-    // const handleShow = () => props.setShow(true);
+    const handleShow = () => props.setShow(true);
 
-    // const handleClick = () => {
-    //     setIsClicked(!isClicked);
-    // };
+    const handleClick = () => {
+        setIsClicked(!isClicked);
+    };
 
     return (
         <Modal show={props.showModal} onHide={handleClose}>
